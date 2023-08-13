@@ -2,6 +2,8 @@
 
 HOW TO USE THIS VERY IMPORTANT <br>
 
+download python first ☠️<br>
+click code and download as zip and unzip the python script <br>
 create a folder to put this python script into <br>
 copy and paste the .osu files you wanna convert into rice only into this folder<br>
 run the python script <br>
