@@ -1,5 +1,5 @@
 import os 
-import pandas as pd
+
 filedir = os.getcwd()
 for file in os.listdir(filedir):
     if file[-4:] == '.osu':
