@@ -1,5 +1,7 @@
 # rice-to-ln
 
+Takes LN charts from osu mania and converts them into rice charts 
+
 HOW TO USE THIS VERY IMPORTANT <br>
 
 download python first ☠️<br>
