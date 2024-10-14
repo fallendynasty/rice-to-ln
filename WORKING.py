@@ -14,17 +14,17 @@ with open(new_file, 'w', encoding="utf-8") as g:
         for i in range(len(data)):
             line = data[i]
             if hit_start:
-                line = line.split(',')
-                line[3] = '1'
+                line = line.split(',') #https://osu.ppy.sh/wiki/en/Client/File_formats/osu_%28file_format%29#hit-objects
+                line[3] = '1' #rice object type
                 hitSample = line[5].split(':')
-                if len(hitSample) == 6:
+                if len(hitSample) == 6: #remove endTime 
                     hitSample = hitSample[1:]
                 line[5] = ":".join(hitSample)   
                 line = ','.join(line)
-            if line[:7] == 'Version':
+            if line[:7] == 'Version': #change the name
                 line = line[:-1] + ' no ln\n' 
 
-            if line == '[HitObjects]\n':
+            if line == '[HitObjects]\n': #hit object section reached
                 hit_start = True
             data[i] = line
 
