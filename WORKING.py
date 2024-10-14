@@ -7,8 +7,8 @@ file_name = askopenfilename() # show an "Open" dialog box and return the path to
 
 new_file = os.path.dirname(file_name) + '\\' + os.path.basename(file_name)[:-4] + '[no ln].osu'
 # print(file_name, '\n', new_file)
-with open(new_file, 'w') as g:
-    with open(file_name) as f:
+with open(new_file, 'w', encoding="utf-8") as g:
+    with open(file_name, encoding="utf-8") as f:
         data = f.readlines()
         hit_start = False
         for i in range(len(data)):
