@@ -1,6 +1,6 @@
 # rice-to-ln
 
-Takes LN charts from osu mania and converts them into rice charts 
+Takes LN charts from osu mania and converts them into rice charts so actually the repository name should be ln to rice and this is a misnomer lol
 
 HOW TO USE THIS VERY IMPORTANT <br>
 
